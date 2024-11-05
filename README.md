@@ -2,7 +2,7 @@
 
 Скрипт для быстрой настройки Telegram Proxy.
 
-Для прокси используется [официальный Docker-образ](https://hub.docker.com/r/telegrammessenger/proxy/) от Telegram.
+Используется [официальный Docker-образ](https://hub.docker.com/r/telegrammessenger/proxy/) от Telegram.
 
 ## Как пользоваться
 
@@ -47,5 +47,10 @@ cd telegram-proxy
 cp .env.example .env
 ```
 
-Promoted-канал указывается в боте [@MTProxybot](https://t.me/MTProxybot).
+Перезапустите прокси:
 
+```sh
+./proxy stop & ./proxy start
+```
+
+Promoted-канал указывается в боте [@MTProxybot](https://t.me/MTProxybot).
