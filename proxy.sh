@@ -56,7 +56,7 @@ elif [ "$COMMAND" = "start" ]; then
 elif [ "$COMMAND" = "stop" ]; then
     docker container stop "$CONTAINER_NAME"
 elif [ "$COMMAND" = "remove" ]; then
-    docker container stop "$CONTAINER_NAME"
+    docker container rm "$CONTAINER_NAME"
 elif [ "$COMMAND" = "logs" ]; then
     docker logs "$CONTAINER_NAME"
 fi
