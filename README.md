@@ -15,7 +15,7 @@ curl -sSL https://get.docker.com/ | sh
 Склонируйте репозиторий и перейдите в директорию telegram-proxy:
 
 ```sh
-git@github.com:Imangazaliev/telegram-proxy.git
+git clone https://github.com/Imangazaliev/telegram-proxy.git
 cd telegram-proxy
 ```
 
