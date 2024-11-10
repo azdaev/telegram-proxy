@@ -21,6 +21,8 @@ load_env '='
 
 COMMAND="$1"
 CONTAINER_NAME="mtproto-proxy"
+DEFAULT_PORT=443
+PORT="${PORT:=$DEFAULT_PORT}"
 
 # удаляем первый аргумент
 shift
@@ -38,7 +40,7 @@ proxy_status()
 
 proxy_start()
 {
-    docker run -d -p443:443 \
+    docker run -d "-p$PORT:443" \
         --name="$CONTAINER_NAME" \
         --restart=always \
         -v proxy-config:/data \
