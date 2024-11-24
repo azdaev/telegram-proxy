@@ -25,6 +25,23 @@ cd telegram-proxy
 ./proxy.sh start
 ```
 
+Посмотрите логи и найдите ссылку для добавления прокси:
+
+```sh
+./proxy.sh logs
+```
+
+
+## Команды
+
+- `start` — запустить прокси
+- `stop` — остановить прокси
+- `status` — статус (запущен / остановлен)
+- `remove` — удалить контейнер с прокси
+- `logs` — показать логи
+
+
+## Как указать Promoted-канал
 Посмотрите логи и скопируйте значение Secret 1 
 
 ```sh
@@ -47,13 +64,4 @@ cp .env.example .env
 ./proxy.sh stop && sleep 5 && ./proxy.sh remove && ./proxy.sh start
 ```
 
-## Команды
-
-- `start` — запустить прокси
-- `stop` — остановить прокси
-- `status` — статус (запущен / остановлен)
-- `remove` — удалить контейнер с прокси
-- `logs` — показать логи
-
-
-Promoted-канал указывается в боте [@MTProxybot](https://t.me/MTProxybot).
+Выполните команду /myproxies в боте [@MTProxybot](https://t.me/MTProxybot) и следуйте инструкции.
